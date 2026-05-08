@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insumos Médicos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+        <a class="navbar-brand" href="index.html">Medical Supplies</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+        <li class="nav-item">
+        <a class="nav-link" href="carrito.html">
+        🛒 Carrito <span id="contador-carrito" class="badge bg-danger">0</span>
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Nuestros Insumos Médicos</h1>
+
+        <section class="container mb-4">
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+<button class="btn btn-primary shadow-sm btn-filtro" data-categoria="todos">Todos</button>
+<button class="btn btn-outline-primary shadow-sm btn-filtro" data-categoria="1">Insumos Desechables</button>
+<button class="btn btn-outline-primary shadow-sm btn-filtro" data-categoria="2">Instrumental Quirúrgico</button>
+<button class="btn btn-outline-primary shadow-sm btn-filtro" data-categoria="3">Vías Respiratorias</button>
+<button class="btn btn-outline-primary shadow-sm btn-filtro" data-categoria="4">Limpieza</button>
+<button class="btn btn-outline-primary shadow-sm btn-filtro" data-categoria="5">Heridas y Quemaduras</button>
+    </div>
+</section>
+
+        
+    <div class="row" id="contenedor-productos">
+    </div>
+    </main>
+
+    <footer class="bg-light text-center py-4 border-top">
+    <p>&copy; 2026 Insumos Médicos. Puente Alto, Chile.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
